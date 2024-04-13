@@ -132,7 +132,7 @@ public class DigestCalculator {
                 FileDigest.addNewDigestToFileDigestList(fileDigests, newFile, digestType);
             }
 
-            System.out.println(newFile.getFileName()+" "+digestType+newFile.getDigestHexByType(digestType)+" "+"("+status+")");
+            System.out.println(newFile.getFileName()+" "+digestType+" "+newFile.getDigestHexByType(digestType)+" "+"("+status+")");
         }
     }
 
@@ -183,6 +183,7 @@ public class DigestCalculator {
         System.out.println("Caminho do Arquivo de Lista de Digest: " + pathToFileWithDigestList);
     
         try{
+            System.out.println("\n\nCatalogo fornecido:");
             readDigestList();
         }catch(Exception e){
             e.printStackTrace();
@@ -191,6 +192,7 @@ public class DigestCalculator {
         FileDigest.printFileDigestList(fileDigests);
 
         try{
+            System.out.println("\n\nHash dos arquivos fornecidos:");
             calculateAllFilesHash();
         }catch(Exception e){
             return;
