@@ -1,3 +1,6 @@
+// Bernardo Bulgarelli - 2010468
+// Camila Perez Aguiar - 1521516
+
 import java.util.ArrayList;
 import java.util.List;
 

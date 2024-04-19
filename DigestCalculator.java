@@ -1,3 +1,6 @@
+// Bernardo Bulgarelli - 2010468
+// Camila Perez Aguiar - 1521516
+
 import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
